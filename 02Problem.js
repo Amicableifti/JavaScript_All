@@ -22,7 +22,7 @@ function PicnicBudget(number) {
   const thirdBudget = 3000;
 
   //  Check if number is negetive
-  if (number <= 0 || typeof number !== 'number') {
+  if (number <= 0 || typeof number !== 'number' ) {
     return 'Please Insert number ast least more then zero'
   }
   else {
@@ -57,6 +57,6 @@ function PicnicBudget(number) {
   return totalBudget;
 }
 
-const output = PicnicBudget(202);
+const output = PicnicBudget(66);
 console.log(output);
 
