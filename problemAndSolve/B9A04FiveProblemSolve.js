@@ -18,12 +18,11 @@ Challenge 📢 : বাকে র ভাই যদি ইনপুট হি স
 */
 
 /*
-
 function calculateMoney(ticket){
  //Error validation and Return error message
  if(ticket<0)
  {
-    return " Invalid Number" ;
+    return "Invalid Number" ;
  }
  let remaningMoney = 0;
  const ticketPrice = 120;
@@ -35,8 +34,12 @@ remaningMoney = (ticket*ticketPrice) - (fixedCost+(staffNumber*perstaffLunchCost
  return remaningMoney ;
 }
 
-*/
+console.log(calculateMoney(10));
+console.log(calculateMoney(1055));
+console.log(calculateMoney(93));
+console.log(calculateMoney(-130));
 
+*/
 /*
 console.log(calculateMoney(10)); 
 console.log(calculateMoney(1055));
@@ -86,21 +89,21 @@ function checkName(name) {
         let lastChar = data.charAt(data.length - 1);
         // check last character
         if (lastChar === 'a' || lastChar === 'y' || lastChar === 'i' || lastChar === 'e' || lastChar === 'o' || lastChar === 'u' || lastChar === 'w') {
-            return "Bad Name";
+            return "Good Name";
         }
         else {
-            return "Good Name";
+            return "Bad Name";
         }
     }
 }
 
 console.log(checkName('Salman'));
 console.log(checkName('RAFEE'));
-console.log(checkName('199n'));
-console.log(checkName(8));
-console.log(checkName(['Rashed',true]));
-*/
+console.log(checkName('Jhankar'));
+console.log(checkName(199));
+console.log(checkName(['Rashed']));
 
+*/
 /*
 // Problem 03 
 
@@ -118,13 +121,10 @@ function deleteInvalids(arr) {
 console.log(deleteInvalids( [1 , null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }] ));
 console.log(deleteInvalids( [ "1" , {num:2} , NaN] ));
 console.log(deleteInvalids([ 1 , 2 , -3 ]));
-console.log(deleteInvalids({ num: [1, 2, 3] })); */
-
+console.log(deleteInvalids({ num: [1, 2, 3] })); 
+*/
 // Problem 04
 
-/*
-
-*/
 /*
 function password(obj) {
     
@@ -153,44 +153,43 @@ console.log(password({ name: 'rahat', birthYear: 2002, siteName: 'Facebook' }));
 console.log(password({ name: 'toky', birthYear: 200, siteName: 'facebook' }));
 console.log(password({ name: 'maisha', birthYear: 2002 }));
 */
-
 // FIVE
 
-function monthlySavings(arr, number) {
+// function monthlySavings(arr, number) {
 
-    // console.log(arr,number)
-    if (typeof number !== "number") {
-        return 'invalid input';
-    }
-    else {
-        let saving = 0;
-        let livingCost = number;
-        let totalAmout = 0;
-        for (let items of arr) {
-            // console.log(arr,items);
-            if(items >= 3000 ){
-                let payment = items*.2 
-                items = items - payment
-            }
-            totalAmout = totalAmout + items;
+//     // console.log(arr,number)
+//     if (typeof number !== "number") {
+//         return 'invalid input';
+//     }
+//     else {
+//         let saving = 0;
+//         let livingCost = number;
+//         let totalAmout = 0;
+//         for (let items of arr) {
+//             // console.log(arr,items);
+//             if(items >= 3000 ){
+//                 let payment = items*.2 
+//                 items = items - payment
+//             }
+//             totalAmout = totalAmout + items;
             
-        }
-        // console.log(totalAmout , livingCost);
-        if( totalAmout === livingCost )
-        {
-            return totalAmout-livingCost;
-        }
-        if( totalAmout > livingCost )
-        {
-            return totalAmout-livingCost;
-        }
-        else {
-            return "earn more"
-        }
+//         }
+//         // console.log(totalAmout , livingCost);
+//         if( totalAmout === livingCost )
+//         {
+//             return totalAmout-livingCost;
+//         }
+//         if( totalAmout > livingCost )
+//         {
+//             return totalAmout-livingCost;
+//         }
+//         else {
+//             return "earn more"
+//         }
 
-    }
-    return 'earn more';
-}
+//     }
+//     return 'earn more';
+// }
 // console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400));
 // console.log(monthlySavings([ 1000 , 2000 , 2500 ] , 5000));
 // console.log(monthlySavings([900, 2700, 3400], 10000));

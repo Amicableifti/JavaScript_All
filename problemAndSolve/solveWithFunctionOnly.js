@@ -27,10 +27,10 @@ function checkName(name) {
        let lastChar = data.charAt(data.length - 1);
        // check last character
        if (lastChar === 'a' || lastChar === 'y' || lastChar === 'i' || lastChar === 'e' || lastChar === 'o' || lastChar === 'u' || lastChar === 'w') {
-           return "Bad Name";
+           return "Good Name";
        }
        else {
-           return "Good Name";
+           return "Bad Name";
        }
    }
 }
@@ -68,6 +68,31 @@ function password(obj) {
        
        return output;
    }
+}
+
+//Four
+
+function password(obj) {
+    
+    if (obj.name == "null" || obj.birthYear == "null"  || obj.siteName == "null" || Object.keys(obj).length  !== 3) {
+
+        return 'invalid';
+    }
+    let value = obj.birthYear;
+    value = value.toString();
+    // return typeof value , value.length;
+    if (value.length !== 4) {
+
+        return 'invalid';
+    }
+    else {
+        
+        let output = obj.siteName + '#' + obj.name + '@' + obj.birthYear;
+        output.charAt(0).toUpperCase() + output.slice(1);
+        output = output [0].toUpperCase() + output . slice(1);
+        
+        return output;
+    }
 }
 
 // FIVE
